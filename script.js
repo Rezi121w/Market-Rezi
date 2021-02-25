@@ -1,3 +1,8 @@
+var market = localStorage.getItem("Market")
+if(market != 1){ 
+    window.location.replace("index.html")
+} 
+else{
 let money = prompt("How much money do you have?")
 let total = 0
 function pizza() {
@@ -68,4 +73,5 @@ function ran(){
     random = Math.floor(Math.random() * 1000)
     alert("You have "+random+" Money")
     money = random;
+}
 }

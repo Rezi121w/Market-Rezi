@@ -1,3 +1,5 @@
+localStorage.setItem("Admin", 0)
+localStorage.setItem("Market", 0)
 function Reg() {
     var name = document.getElementById("username");
     var email = document.getElementById("email");
@@ -32,6 +34,7 @@ function log() {
  var user = localStorage.getItem("user");
  var pas = localStorage.getItem("password");
  if(login.value == "Admin" && password.value == "12345"){
+  localStorage.setItem("Admin", 1)
   window.open("Admin.html",'_self');  
 }
 else if(login.value != user){
@@ -42,6 +45,7 @@ else if(password.value != pas){
 }
 else{
   window.open("market.html",'_self');  
+  localStorage.setItem("Market", 1)
 }
 }
 function fpass(){

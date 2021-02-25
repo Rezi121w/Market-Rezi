@@ -1,3 +1,9 @@
+var admin = localStorage.getItem("Admin")
+if(admin == 1){ 
+} 
+else{
+    window.location.replace("index.html")
+}
 function payeer(){
     document.getElementById("dropdownMenuButton").innerText = "Payeer";
     document.getElementById("name").placeholder = "P1011092385";
